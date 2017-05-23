@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Грант Заргарян](https://up.htmlacademy.ru/adaptive/11/user/29906).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Белов](https://up.htmlacademy.ru/adaptive/11/user/96038).
 
 ---
 
