@@ -5,8 +5,124 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+  <div class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/80x30" alt="Pink">
+      </div>
+      <nav class="main-nav"> <!-- main-nav--open - для открытого состояния меню -->
+        <span class="main-nav__toggler"></span>
+        <div class="main-nav__wrapper">  <!-- main-nav__toggler--open - для открытого гамбургера -->
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section class="index-intro">
+      <h1 class="index-intro__title"></h1>
+    </section>
+    <section class="app">
+      <div class="app__platforms-wrapper">
+        <a href="#" class="index-intro__download btn">Скачать приложение</a>
+        <img class="app__apple" src="">
+        <img class="app__android" src="">
+        <img class="app__windows" src="">
+        <p class="app__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+      <section class="features">
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
+        <div class="features__wrapper">
+          <div class="features__item">
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="features__item">
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p class="features__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="features__item">
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p class="features__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews_wrapper">
+          <div class="reviews-item">
+            <h3 class="reviews__author">Николай Петров</h3>
+            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="reviews-item">
+            <h3 class="reviews__author">Иван Сидоров</h3>
+            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="reviews-item">
+            <h3 class="reviews__author">Петр Николаев</h3>
+            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="reviews__pagination"></div>
+        </div>
+      </section>
+      <section class="price">
+        <table class="price-table">
+          <tr class="price-table__standard">
+            <td>
+              <div class="price-table__version">База</div>
+              <div class="price-table__cost">1,99 USD</div>
+            </td>
+            <td>
+              <div class="price-table__version">Стандарт</div>
+              <div class="price-table__cost">3,99 USD</div>
+              <span class="price-table_label">Хит</span>
+            </td>
+            <td>
+              <div class="price-table__version">Анлим</div>
+              <div class="price-table__cost">9,99 USD</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="price-table__standard-filter">Розовый фильтр</td>
+            <td class="price-table__standard-filter">Розовый фильтр</td>
+            <td class="price-table__standard-filter">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="price-table__standard-smilies">Смайлики</td>
+            <td class="price-table__standard-smilies">Смайлики</td>
+            <td class="price-table__standard-smilies">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price-table__standard-comments">Комментарии</td>
+            <td class="price-table__standard-comments">Комментарии</td>
+            <td class="price-table__standard-comments">Комментарии</td>
+          </tr>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+        </table>
+        <div class="price__pagination"></div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <h2 class="feedback_title">Остались вопросы? Свяжитесь с нами!</h2>
+          <div class="feedback__item">
+            <div class="feedback__title">Звоните:</div>
+            <div class="feedback__info">+7 (812) 555-66-66</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__title">Пишите:</div>
+            <div class="feedback__info">mail@htmlacademy.ru</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__title">Приезжайте в гости:</div>
+            <div class="feedback__info">ул. Большая Конюшенная, 19/8</div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+      </section>
 
   </body>
 </html>
