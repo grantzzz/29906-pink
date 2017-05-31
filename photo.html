@@ -29,7 +29,7 @@
           <h2 class="posts__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         </div>
         <div class="post">
-          <div class="post__panorama"><img src="http://placehold.it/320x137"><span class="post__panorama--label">Панорама дня</span></div>
+          <div class="post__panorama"><img src="http://placehold.it/320x137" alt="photo"><span class="post__panorama--label">Панорама дня</span></div>
           <div class="posts__wrapper">
             <div class="post__comment">
               <span class="post__author">Анна</span><span class="post__time">(5 минут назад)</span>
@@ -103,14 +103,14 @@
                 Выкладывайте все, что накопилось в телефоне!</p>
           </div>
     </section>
-    <section class="photo-edit">
-        <form class="photo-editor">
+    <section class="photo-editor">
+        <form class="photo-editor__form">
           <div class="photo-editor__wrapper">
             <div class="photo-editor__photo"><img src="http://placehold.it/18x14"></div>
             <div class="photo-editor__tools">
-              <div class="photo-editor__crop-tool"><img src="http://placehold.it/18x14"></div>
-              <div class="photo-editor__fill-tool"><img src="http://placehold.it/18x14"></div>
-              <div class="photo-editor__contrast-tool"><img src="http://placehold.it/18x14"></div>
+              <span class="photo-editor__crop-tool"></span>
+              <span class="photo-editor__fill-tool"></span>
+              <span class="photo-editor__contrast-tool"></span>
             </div>
             <input type="range" name="scale" class="photo-editor__scale">
             <button class="photo-editor__btn  btn" name="photo-editor-send" type="submit" formaction="https://echo.htmlacademy.ru/">Запостить</button>
@@ -122,11 +122,11 @@
         <div class="page-footer__wrapper">
           <div class="page-footer__logo"><img src="http://placehold.it/147x40"></div>
           <div class="page-footer__social-links">
-              <div class="page-footer__social-links-twitter"><img src="http://placehold.it/18x14"></div>
-              <div class="page-footer__social-links-fb"><img src="http://placehold.it/18x14"></div>
-              <div class="page-footer__social-links-youtube"><img src="http://placehold.it/18x14"></div>
+              <a class="page-footer__social-links-twitter" href="#">Vk</a>
+              <a class="page-footer__social-links-fb" href="#">Facebook</a>
+              <a class="page-footer__social-links-youtube" href="#">Youtube</a>
           </div>
-          <div class="footer__copyright">Разработано<img src="http://placehold.it/27x34"></div>
+          <a class="footer__copyright" href="https://htmlacademy.ru/">Разработано</a>
         </div>
     </footer>
 </body>
