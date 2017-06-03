@@ -3,53 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-  <div class="page-header">
+  <body class="index-page">
+  <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/80x30" alt="Pink">
+        <img src="../img/logo-pink-white-mobile.svg" alt="Pink">
       </div>
       <nav class="main-nav"> <!-- main-nav--open - для открытого состояния меню -->
         <span class="main-nav__toggler"></span>
         <div class="main-nav__wrapper">  <!-- main-nav__toggler--open - для открытого гамбургера -->
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="">Фотографии</a></li>
-            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="">Html Academy</a></li>
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
     <section class="index-intro">
       <h1 class="index-intro__title"></h1>
     </section>
     <section class="app">
-      <div class="app__platforms-wrapper">
+      <div class="app__wrapper">
         <a class="app__download btn" href="">Скачать приложение</a>
-        <a class="app__apple" href=""></a>
-        <a class="app__android" href=""></a>
-        <a class="app__windows" href=""></a>
+        <div class="app__platforms-wrapper">
+         <a class="app__apple" href=""></a>
+         <a class="app__android" href=""></a>
+         <a class="app__windows" href=""></a>
+      </div>
         <p class="app__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
       <section class="features">
-        <h2 class="features__title">Устали от серости мегаполиса?</h2>
-        <h2 class="features__title">Нам есть, что вам предложить!</h2>
-        <div class="features__wrapper">
-          <div class="features__item">
-            <h3 class="features__item-title">Поднимает настроение</h3>
-            <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="features__item">
-            <h3 class="features__item-title">Меняет мир вокруг</h3>
-            <p class="features__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="features__item">
-            <h3 class="features__item-title">Заводит новых друзей</h3>
-            <p class="features__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </div>
-        </div>
+         <div class="features__wrapper">
+           <h2 class="features__title">Устали от серости мегаполиса?</h2>
+           <h2 class="features__title">Нам есть, что вам предложить!</h2>
+         </div>
+         <div class="features__bg">
+           <div class="features__wrapper">
+             <div class="features__item">
+               <h3 class="features__item-title">Поднимает настроение</h3>
+               <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+             </div>
+             <div class="features__item">
+               <h3 class="features__item-title">Меняет мир вокруг</h3>
+               <p class="features__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+             </div>
+             <div class="features__item">
+               <h3 class="features__item-title">Заводит новых друзей</h3>
+               <p class="features__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+             </div>
+           </div>
+         </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
@@ -70,35 +78,35 @@
       </section>
       <section class="price">
         <table class="price-table">
-          <tr class="price-table__standard">
-            <td>
-              <div class="price-table__version">База</div>
+          <tr class="price-table__version">
+            <td class="price-table__version-base">
+              <div class="price-table__version-title">База</div>
               <div class="price-table__cost">1,99 USD</div>
             </td>
-            <td>
-              <div class="price-table__version">Стандарт</div>
+            <td class="price-table__version-standard">
+              <div class="price-table__version-title">Стандарт</div>
               <div class="price-table__cost">3,99 USD</div>
-              <span class="price-table_label">Хит</span>
+              <span class="price-table__label">Хит</span>
             </td>
-            <td>
-              <div class="price-table__version">Анлим</div>
+            <td class="price-table__version-unlim">
+              <div class="price-table__version-title">Анлим</div>
               <div class="price-table__cost">9,99 USD</div>
             </td>
           </tr>
-          <tr>
+          <tr class="price-table__filter">
+            <td class="price-table__base-filter">Розовый фильтр</td>
             <td class="price-table__standard-filter">Розовый фильтр</td>
-            <td class="price-table__standard-filter">Розовый фильтр</td>
-            <td class="price-table__standard-filter">Розовый фильтр</td>
+            <td class="price-table__unlim-filter">Розовый фильтр</td>
           </tr>
-          <tr>
+          <tr class="price-table__smilies">
+            <td class="price-table__base-smilies">Смайлики</td>
             <td class="price-table__standard-smilies">Смайлики</td>
-            <td class="price-table__standard-smilies">Смайлики</td>
-            <td class="price-table__standard-smilies">Смайлики</td>
+            <td class="price-table__unlim-smilies">Смайлики</td>
           </tr>
-          <tr>
+          <tr class="price-table__comments">
+            <td class="price-table__base-comments">Комментарии</td>
             <td class="price-table__standard-comments">Комментарии</td>
-            <td class="price-table__standard-comments">Комментарии</td>
-            <td class="price-table__standard-comments">Комментарии</td>
+            <td class="price-table__unlim-comments">Комментарии</td>
           </tr>
 
         </table>
@@ -106,18 +114,18 @@
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
-          <h2 class="feedback_title">Остались вопросы? Свяжитесь с нами!</h2>
+          <h2 class="feedback__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
           <div class="feedback__item">
-            <div class="feedback__title">Звоните:</div>
-            <div class="feedback__info">+7 (812) 555-66-66</div>
+            <div class="feedback__item-title">Звоните:</div>
+            <div class="feedback__item-info">+7 (812) 555-66-66</div>
           </div>
           <div class="feedback__item">
-            <div class="feedback__title">Пишите:</div>
-            <div class="feedback__info">mail@htmlacademy.ru</div>
+            <div class="feedback__item-title">Пишите:</div>
+            <div class="feedback__item-info">mail@htmlacademy.ru</div>
           </div>
           <div class="feedback__item">
-            <div class="feedback__title">Приезжайте в гости:</div>
-            <div class="feedback__info">ул. Большая Конюшенная, 19/8</div>
+            <div class="feedback__item-title">Приезжайте в гости:</div>
+            <div class="feedback__item-info">ул. Большая Конюшенная, 19/8</div>
           </div>
         </div>
       </section>
