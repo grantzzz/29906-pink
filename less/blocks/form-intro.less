@@ -4,6 +4,7 @@
     padding-bottom: 45px;
 
     background: #243344 url('../img/bg-back-mobile@1x.jpg') 55% 0 no-repeat;
+    background-size: cover;
 }
 .form-intro__title
 {
@@ -21,6 +22,11 @@
 }
 .form-intro__wrapper
 {
-    width: 280px;
-    margin: 0 auto;
+    .container;
+}
+@media @tablet-widths {
+  .form-intro__title {
+    font-size: 50px;
+    line-height: 65px;
+  }
 }

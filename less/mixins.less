@@ -1,0 +1,23 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media @tablet-widths {
+    width: 660px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
+}
+.clearfix() {
+  &:after {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}

@@ -1,26 +1,28 @@
-.page-footer
+.index-footer
 {
+    display: none;
     min-height: 255px;
     padding-top: 40px;
 }
-.page-footer__wrapper
+.index-footer__wrapper
 {
-    width: 280px;
-    margin: 0 auto;
+    .container;
+    display: flex;
+    justify-content: space-between;
 }
-.page-footer__logo
-{
-    margin-bottom: 40px;
-
-    text-align: center;
-}
-.page-footer__social-links
+.index-footer__logo
 {
     margin-bottom: 40px;
 
     text-align: center;
 }
-.page-footer__copyright
+.index-footer__social-links
+{
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+.index-footer__copyright
 {
     text-align: center;
     text-align-last: center;
@@ -35,4 +37,8 @@
     color: #283645;
 }
 }
-
+@media @tablet-widths {
+  .index-footer {
+    display: block;
+  }
+}

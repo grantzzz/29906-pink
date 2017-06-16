@@ -1,36 +1,25 @@
 .app
 {
-    min-height: 270px;
-    padding: 28px 0;
-
+    position: absolute;
+    bottom: -320px;
+    width: 100%;
+    padding: 30px 0;
     background-color: #17212e;
+
+
+
 }
 .app__platforms-wrapper
 {
-    width: 280px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 35px;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .app__wrapper
 {
-    width: 280px;
-    margin: 0 auto;
+    .container;
 }
-.app__download
-{
-    font-family: 'Open Sans';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
 
-    min-height: 55px;
-    margin: 0 auto;
-
-    text-align: center;
-
-    color: #fff;
-}
 .app__descr
 {
     font-family: 'Open Sans';
@@ -48,8 +37,8 @@
 
     width: 50px;
     height: 50px;
-    margin-right: 35px;
-    margin-left: 35px;
+    margin-right: 30px;
+    margin-left: 30px;
 
     background: url('../img/logo-apple.svg') 50% 50% no-repeat;
     background-size: contain;
@@ -60,7 +49,7 @@
 
     width: 50px;
     height: 50px;
-    margin-right: 35px;
+    margin-right: 30px;
 
     background: url('../img/logo-android.svg') 50% 50% no-repeat;
 }
@@ -72,4 +61,25 @@
     height: 50px;
 
     background: url('../img/logo-microsoft.svg') 50% 50% no-repeat;
+}
+.app__download {
+  padding: 18px 40px;
+  display: block;
+}
+
+@media @tablet-widths {
+  .app {
+    position: static;
+    top: 200px;
+    left: 0;
+    background: transparent;
+  }
+  .app__inner {
+    width: 300px;
+  }
+  .app__download {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
 }

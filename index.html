@@ -8,42 +8,47 @@
   </head>
   <body class="index-page">
   <header class="page-header">
+    <div class="page-header__wrapper">
       <div class="page-header__logo">
         <img src="img/logo-pink-white-mobile.svg" alt="Pink">
       </div>
+      <input class="page-header__input-toggler" type="checkbox" id="burger">
+      <label class="page-header__toggler" for="burger"></label>
       <nav class="main-nav"> <!-- main-nav--open - для открытого состояния меню -->
-        <span class="main-nav__toggler"></span>
-        <div class="main-nav__wrapper">  <!-- main-nav__toggler--open - для открытого гамбургера -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="">Html Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+
+            <div class="main-nav__item  main-nav__item--active"><a>Главная</a></div>
+            <div class="main-nav__item"><a href="photo.html">Фотографии</a></div>
+            <div class="main-nav__item"><a href="form.html">Конкурс</a></div>
+            <div class="main-nav__item"><a href="">Html Academy</a></div>
+
+        </nav>
+      </div>
+
     </header>
     <section class="index-intro">
-      <h1 class="index-intro__title"></h1>
-    </section>
-    <section class="app">
-      <div class="app__wrapper">
-        <a class="app__download btn" href="">Скачать приложение</a>
-        <div class="app__platforms-wrapper">
-         <a class="app__apple" href=""></a>
-         <a class="app__android" href=""></a>
-         <a class="app__windows" href=""></a>
+
+        <div class="app">
+          <div class="app__wrapper">
+            <div class="app__inner">
+              <h1 class="app__title">Взгляните<br> на жизнь<br> иначе!</h1>
+              <a class="app__download btn" href="">Скачать приложение</a>
+              <div class="app__platforms-wrapper">
+               <a class="app__apple" href=""></a>
+               <a class="app__android" href=""></a>
+               <a class="app__windows" href=""></a>
+              </div>
+              <p class="app__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+        </div>
       </div>
-        <p class="app__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
     </section>
+
       <section class="features">
-         <div class="features__wrapper">
            <h2 class="features__title">Устали от серости мегаполиса?</h2>
-           <h2 class="features__title">Нам есть, что вам предложить!</h2>
-         </div>
-         <div class="features__bg">
-           <div class="features__wrapper">
+           <h2 class="features__title">Нам есть, что вам<br> предложить!</h2>
+
+          <div class="features__wrapper">
+           <div class="features__inner">
              <div class="features__item">
                <h3 class="features__item-title">Поднимает настроение</h3>
                <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -58,59 +63,98 @@
              </div>
            </div>
          </div>
+         <div class="features__effect-wrapper">
+            <div class="features__effect-inner">
+               <div class="features__effect">
+                 <h2>Эффект на 24 часа!</h2>
+
+                  <p>Британские ученые провели исследования
+                  и доказали, что положительный эффект
+                  от использования приложения длится
+                  целые сутки!</p>
+
+                  <a href="#">Узнать больше об исследовании</a>
+               </div>
+             </div>
+          </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
-          <div class="reviews__item">
-            <h3 class="reviews__author">Николай Петров</h3>
-            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <input type="radio" name="pagination" class="reviews__pagination-control-1" id="reviews-pagination-control-1" >
+              <input type="radio" name="pagination" class="reviews__pagination-control-2" id="reviews-pagination-control-2" checked>
+              <input type="radio" name="pagination" class="reviews__pagination-control-3" id="reviews-pagination-control-3">
+              <label for="reviews-pagination-control-1" class="reviews__paginator-1"></label>
+              <label for="reviews-pagination-control-2" class="reviews__paginator-2"></label>
+              <label for="reviews-pagination-control-3" class="reviews__paginator-3"></label>
+
+          <div class="reviews__inner">
+            <div class="reviews__item">
+              <div class="reviews__item-content">
+                <h3 class="reviews__author">Николай Петров</h3>
+                <div class="reviews__about-author">20 лет, студент</div>
+                <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-content">
+                <h3 class="reviews__author">Иван Сидоров</h3>
+                <div class="reviews__about-author">25 лет, водитель трамвая</div>
+                <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-content">
+                <h3 class="reviews__author">Петр Николаев</h3>
+                <div class="reviews__about-author">30 лет, олигарх</div>
+                <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </div>
           </div>
-          <div class="reviews__item">
-            <h3 class="reviews__author">Иван Сидоров</h3>
-            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <div class="reviews__item">
-            <h3 class="reviews__author">Петр Николаев</h3>
-            <p class="reviews__review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <div class="reviews__pagination"></div>
         </div>
       </section>
       <section class="price">
-        <table class="price-table">
-          <tr class="price-table__version">
-            <td class="price-table__version-base">
-              <div class="price-table__version-title">База</div>
-              <div class="price-table__cost">1,99 USD</div>
-            </td>
-            <td class="price-table__version-standard">
-              <div class="price-table__version-title">Стандарт</div>
-              <div class="price-table__cost">3,99 USD</div>
-              <span class="price-table__label">Хит</span>
-            </td>
-            <td class="price-table__version-unlim">
-              <div class="price-table__version-title">Анлим</div>
-              <div class="price-table__cost">9,99 USD</div>
-            </td>
-          </tr>
-          <tr class="price-table__filter">
-            <td class="price-table__base-filter">Розовый фильтр</td>
-            <td class="price-table__standard-filter">Розовый фильтр</td>
-            <td class="price-table__unlim-filter">Розовый фильтр</td>
-          </tr>
-          <tr class="price-table__smilies">
-            <td class="price-table__base-smilies">Смайлики</td>
-            <td class="price-table__standard-smilies">Смайлики</td>
-            <td class="price-table__unlim-smilies">Смайлики</td>
-          </tr>
-          <tr class="price-table__comments">
-            <td class="price-table__base-comments">Комментарии</td>
-            <td class="price-table__standard-comments">Комментарии</td>
-            <td class="price-table__unlim-comments">Комментарии</td>
-          </tr>
+              <input type="radio" name="pagination-table" class="price__pagination-control-1" id="price-pagination-control-1" checked>
+              <input type="radio" name="pagination-table" class="price__pagination-control-2" id="price-pagination-control-2" >
+              <input type="radio" name="pagination-table" class="price__pagination-control-3" id="price-pagination-control-3">
+              <label for="price-pagination-control-1" class="price__paginator-1"></label>
+              <label for="price-pagination-control-2" class="price__paginator-2"></label>
+              <label for="price-pagination-control-3" class="price__paginator-3"></label>
 
-        </table>
-        <div class="price__pagination"></div>
+          <div class="price__wrapper">
+            <table class="price-table">
+              <tr class="price-table__version">
+                <td class="price-table__version-base">
+                  <div class="price-table__version-title">База</div>
+                  <div class="price-table__cost">1,99 USD</div>
+                </td>
+                <td class="price-table__version-standard">
+                  <div class="price-table__version-title">Стандарт</div>
+                  <div class="price-table__cost">3,99 USD</div>
+                  <span class="price-table__label">Хит</span>
+                </td>
+                <td class="price-table__version-unlim">
+                  <div class="price-table__version-title">Анлим</div>
+                  <div class="price-table__cost">9,99 USD</div>
+                </td>
+              </tr>
+              <tr class="price-table__filter">
+                <td class="price-table__base-filter">Розовый фильтр</td>
+                <td class="price-table__standard-filter">Розовый фильтр</td>
+                <td class="price-table__unlim-filter">Розовый фильтр</td>
+              </tr>
+              <tr class="price-table__smilies">
+                <td class="price-table__base-smilies">Смайлики</td>
+                <td class="price-table__standard-smilies">Смайлики</td>
+                <td class="price-table__unlim-smilies">Смайлики</td>
+              </tr>
+              <tr class="price-table__comments">
+                <td class="price-table__base-comments">Комментарии</td>
+                <td class="price-table__standard-comments">Комментарии</td>
+                <td class="price-table__unlim-comments">Комментарии</td>
+              </tr>
+
+            </table>
+        </div>
       </section>
       <section class="feedback">
         <div class="feedback__wrapper">
@@ -131,6 +175,17 @@
       </section>
       <section class="map">
       </section>
-
+      <footer class="index-footer">
+        <div class="index-footer__wrapper">
+          <div class="index-footer__logo"><img src="img/logo-pink-blue-mobile.svg" alt="Pink"></div>
+          <div class="index-footer__social-links">
+              <a class="page-footer__social-links-twitter" href="#">Vk</a>
+              <a class="index-footer__social-links-fb" href="#">Facebook</a>
+              <a class="index-footer__social-links-youtube" href="#">Youtube</a>
+          </div>
+            <div class="index-footer__copyright"><a href="https://htmlacademy.ru/">Разработано</a>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
