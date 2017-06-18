@@ -3,16 +3,26 @@
     min-height: 250px;
 
     background: #243344 url('../img/bg-back-mobile@1x.jpg') 50% 0 no-repeat;
+    background-size: cover;
+
+
 }
 .photo-intro__title
 {
     font-family: 'Open Sans';
     font-size: 24px;
     font-weight: 300;
-
-    padding-top: 25%;
-
     text-align: center;
-
     color: #fff;
+    margin: 0 auto;
+    padding-top: 100px;
+
+}
+@media @tablet-widths {
+  .photo-intro {
+    min-height: 400px;
+  }
+  .photo-intro__title {
+    font-size: 50px;
+  }
 }

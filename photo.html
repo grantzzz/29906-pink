@@ -2,34 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body class="photo-page">
     <header class="page-header">
+    <div class="page-header__wrapper">
       <div class="page-header__logo">
         <img src="img/logo-pink-white-mobile.svg" alt="Pink">
       </div>
+      <input class="page-header__input-toggler" type="checkbox" id="burger">
+      <label class="page-header__toggler" for="burger"></label>
       <nav class="main-nav"> <!-- main-nav--open - для открытого состояния меню -->
-        <span class="main-nav__toggler"></span>
-        <div class="main-nav__wrapper">  <!-- main-nav__toggler--open - для открытого гамбургера -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="">Html Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+
+            <div class="main-nav__item"><a>Главная</a></div>
+            <div class="main-nav__item main-nav__item--active"><a href="photo.html">Фотографии</a></div>
+            <div class="main-nav__item"><a href="form.html">Конкурс</a></div>
+            <div class="main-nav__item"><a href="">Html Academy</a></div>
+
+        </nav>
+      </div>
+
     </header>
     <section class="photo-intro">
       <h1 class="photo-intro__title">Фотографии<br> пользователей</h1>
     </section>
-    <section class="posts">
-        <div class="posts__wrapper">
           <h2 class="posts__title">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h2>
-        </div>
+    <section class="posts">
         <div class="post">
           <div class="post__panorama"><img src="img/panorama-mobile@1x.jpg" alt="panorama"><span class="post__panorama--label">Панорама дня</span></div>
           <div class="posts__wrapper">
@@ -40,63 +41,65 @@
             </div>
           </div>
           </div>
-          <div class="post">
-            <div class="posts__wrapper">
-              <div class="post__photo"><img src="img/photo-1-mobile@1x.jpg"></div>
-              <div class="post__comment">
-                <span class="post__author">Левон</span><span class="post__time">(5 часов назад)</span>
-                <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="post__likes-counter">Нравится: 356</span>
+          <div class="posts__wrapper posts__wrapper--flex">
+            <div class="post">
+              <div class="post__wrapper">
+                <div class="post__photo"><img src="img/photo-1-mobile@1x.jpg"></div>
+                <div class="post__comment">
+                  <span class="post__author">Левон</span><span class="post__time">(5 часов назад)</span>
+                  <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="post__likes-counter">Нравится: 356</span>
+                </div>
               </div>
             </div>
-          </div>
-           <div class="post">
-            <div class="posts__wrapper">
-              <div class="post__photo"><img src="img/photo-2-mobile@1x.jpg"></div>
-              <div class="post__comment">
-                <span class="post__author">Антон</span><span class="post__time">(12 часов назад)</span>
-                <p class="post__text">Соседи будут рады</p>
-                <span class="post__likes-counter">Нравится: 666</span>
+             <div class="post">
+              <div class="post__wrapper">
+                <div class="post__photo"><img src="img/photo-2-mobile@1x.jpg"></div>
+                <div class="post__comment">
+                  <span class="post__author">Антон</span><span class="post__time">(12 часов назад)</span>
+                  <p class="post__text">Соседи будут рады</p>
+                  <span class="post__likes-counter">Нравится: 666</span>
+                </div>
               </div>
             </div>
-          </div>
-           <div class="post">
-            <div class="posts__wrapper">
-              <div class="post__photo"><img src="img/photo-3-mobile@1x.jpg"></div>
-              <div class="post__comment">
-                <span class="post__author">Борис</span><span class="post__time">(20 часов назад)</span>
-                <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <span class="post__likes-counter">Нравится: 215</span>
+             <div class="post">
+              <div class="post__wrapper">
+                <div class="post__photo"><img src="img/photo-3-mobile@1x.jpg"></div>
+                <div class="post__comment">
+                  <span class="post__author">Борис</span><span class="post__time">(20 часов назад)</span>
+                  <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <span class="post__likes-counter">Нравится: 215</span>
+                </div>
               </div>
             </div>
-          </div>
-           <div class="post">
-            <div class="posts__wrapper">
-              <div class="post__photo"><img src="img/photo-4-mobile@1x.jpg"></div>
-              <div class="post__comment">
-                <span class="post__author">Сергей</span><span class="post__time">(25 часов назад)</span>
-                <p class="post__text">Самая кубанская в мире!</p>
-                <span class="post__likes-counter">Нравится: 4</span>
+             <div class="post">
+              <div class="post__wrapper">
+                <div class="post__photo"><img src="img/photo-4-mobile@1x.jpg"></div>
+                <div class="post__comment">
+                  <span class="post__author">Сергей</span><span class="post__time">(25 часов назад)</span>
+                  <p class="post__text">Самая кубанская в мире!</p>
+                  <span class="post__likes-counter">Нравится: 4</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="post">
-            <div class="posts__wrapper">
-              <div class="post__photo"><img src="img/photo-5-mobile@1x.jpg"></div>
-              <div class="post__comment">
-                <span class="post__author">Максим</span><span class="post__time">(40 часов назад)</span>
-                <p class="post__text">Где снег-то?</p>
-                <span class="post__likes-counter">Нравится: 150</span>
+            <div class="post">
+              <div class="post__wrapper">
+                <div class="post__photo"><img src="img/photo-5-mobile@1x.jpg"></div>
+                <div class="post__comment">
+                  <span class="post__author">Максим</span><span class="post__time">(40 часов назад)</span>
+                  <p class="post__text">Где снег-то?</p>
+                  <span class="post__likes-counter">Нравится: 150</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="post">
-            <div class="posts__wrapper">
-              <div class="post__photo"><img src="img/photo-6-mobile@1x.jpg"></div>
-              <div class="post__comment">
-                <span class="post__author">Надежда</span><span class="post__time">(45 часов назад)</span>
-                <p class="post__text">Всем GM и взаимные лайки!</p>
-                <span class="post__likes-counter">Нравится: 2560</span>
+            <div class="post">
+              <div class="post__wrapper">
+                <div class="post__photo"><img src="img/photo-6-mobile@1x.jpg"></div>
+                <div class="post__comment">
+                  <span class="post__author">Надежда</span><span class="post__time">(45 часов назад)</span>
+                  <p class="post__text">Всем GM и взаимные лайки!</p>
+                  <span class="post__likes-counter">Нравится: 2560</span>
+                </div>
               </div>
             </div>
           </div>
@@ -108,17 +111,34 @@
     <section class="photo-editor">
         <form class="photo-editor__form">
           <div class="photo-editor__wrapper">
-            <div class="photo-editor__photo"><img src="img/photo-7-mobile@1x.jpg"></div>
-            <div class="photo-editor__tools">
-              <span class="photo-editor__crop-tool">
-                <object type="image/svg+xml" data="../img/icon-editor-crop.svg" class="photo-editor__crop-tool-icon"></object>
-              </span>
-              <span class="photo-editor__fill-tool"><object type="image/svg+xml" data="../img/icon-editor-fill.svg" class="photo-editor__fill-tool-icon"></object></span>
-              <span class="photo-editor__contrast-tool"><object type="image/svg+xml" data="../img/icon-editor-contrast.svg" class="photo-editor__contrast-tool-icon"></object></span>
+            <div class="photo-editor__photo">
+              <img src="img/photo-7-mobile@1x.jpg">
             </div>
-            <input type="range" name="scale" class="photo-editor__scale">
-            <button class="photo-editor__btn  btn" name="photo-editor-send" type="submit" formaction="https://echo.htmlacademy.ru/">Запостить</button>
-            <button class="photo-editor__btn  btn" type="reset" name="photo-editor-cansel">Отмена</button>
+              <div class="photo-editor__work-space">
+                <div class="photo-editor__tools">
+                  <div class="photo-editor__crop-tool">
+                    <object type="image/svg+xml" data="../img/icon-editor-crop.svg" class="photo-editor__crop-tool-icon"></object>
+                  </div>
+                  <div class="photo-editor__fill-tool">
+                    <object type="image/svg+xml" data="../img/icon-editor-fill.svg" class="photo-editor__fill-tool-icon"></object>
+                  </div>
+                  <div class="photo-editor__contrast-tool">
+                    <object type="image/svg+xml" data="../img/icon-editor-contrast.svg" class="photo-editor__contrast-tool-icon"></object>
+                  </div>
+                </div>
+                <div class="photo-editor__inputs-scale">
+                      <input type="range" name="" class="photo-editor__common-scale">
+                      <input type="range" name="" class="photo-editor__crop-tool-scale">
+                      <input type="range" name="" class="photo-editor__fill-tool-scale">
+                      <input type="range" name="" class="photo-editor__contrast-tool-scale">
+                  </div>
+                  <div class="photo-editor__buttons">
+                    <button class="photo-editor__btn" name="photo-editor-send" type="submit" formaction="https://echo.htmlacademy.ru/">Запостить</button>
+                    <button class="photo-editor__btn" type="reset" name="photo-editor-cansel">Отмена</button>
+                </div>
+            </div>
+
+          </div>
           </div>
         </form>
     </section>

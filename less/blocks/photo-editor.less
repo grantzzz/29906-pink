@@ -1,0 +1,127 @@
+.photo-editor
+{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #f2f2f2;
+}
+.photo-editor__wrapper
+{
+    .container;
+    width: 280px;
+}
+.photo-editor__photo
+{
+    margin-bottom: 40px;
+}
+.photo-editor__crop-tool
+{
+    background: url();
+}
+
+.photo-editor__tools
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    input {
+      width: 280px;
+      margin-top: 40px;
+    }
+
+}
+.photo-editor__crop-tool-scale, .photo-editor__fill-tool-scale, .photo-editor__contrast-tool-scale {
+  display: none;
+}
+.photo-editor__common-scale {
+    display: block;
+}
+
+.photo-editor__btn {
+  border: 3px solid #d22856;
+  border-radius: 35px 35px;
+  background-color: transparent;
+  color: #d22856;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+   margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media @tablet-widths {
+  .photo-editor__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .photo-editor__btn {
+    width: 260px;
+
+
+  }
+  .photo-editor__photo {
+    margin-right: 45px;
+  }
+   .photo-editor__tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+   }
+  .photo-editor__work-space {
+    display: flex;
+    flex-grow: 1;
+    width: 300px;
+    height: 200px;
+    flex-wrap: wrap;
+  }
+ .photo-editor__inputs-scale {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+ }
+   .photo-editor__crop-tool-scale, .photo-editor__fill-tool-scale, .photo-editor__contrast-tool-scale {
+    display: block;
+
+  }
+  .photo-editor__common-scale {
+      display: none;
+
+
+  }
+  .photo-editor__buttons {
+    width: 290px;
+    margin-top: 65px;
+  }
+
+
+}
+@media @desktop-widths {
+  .photo-editor__buttons {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+  }
+  .photo-editor {
+    background-color: transparent;
+  }
+ .photo-editor__wrapper {
+  width: 820px;
+  background-color: #f3f3f3;
+  padding: 55px 0;
+  padding-left: 80px;
+  padding-right: 60px;
+
+ }
+ .photo-editor__btn {
+  width: 185px;
+ }
+
+}

@@ -1,0 +1,58 @@
+.page-header {
+    background-color: #243344;
+    position: relative;
+    top: 0;
+    width: 100%;
+
+
+
+}
+
+.page-header__wrapper {
+  .container;
+  padding: 0;
+}
+.page-header__logo {
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.page-header__toggler {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+
+}
+
+.page-header__toggler {
+    height: 25px;
+    width: 50px;
+    background: url("../img/icon-menu-burger.svg");
+  }
+.page-header__input-toggler {
+  display: none;
+
+  &:checked + .page-header__toggler {
+    background: url("../img/icon-menu-cross.svg") no-repeat 70% 50%;
+  }
+
+  &:checked ~ .main-nav {
+    display: block;
+  }
+
+}
+@media (max-width: 1200px) {
+  .page-header__wrapper {
+    width: auto;
+  }
+}
+@media @desktop-widths  {
+  .page-header__toggler {
+    display: none;
+  }
+  .page-header__wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
