@@ -1,9 +1,11 @@
 .price
 {
     min-height: 450px;
-    padding-top: 70px;
+    padding-top: 150px;
     padding-bottom: 50px;
     position: relative;
+    background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: 100%;
     background-color: #f3f3f3;
     position: relative;
     input {
@@ -54,7 +56,7 @@
   bottom: 9.5%;
 }
 .price__pagination-control-1:checked ~ .price__wrapper {
-  transform: translate(2%);
+  transform: translate(-25%);
 }
 .price__pagination-control-2:checked ~ .price__paginator-2 {
   background-color: #fff;
@@ -62,7 +64,7 @@
   bottom: 9.5%;
 }
 .price__pagination-control-2:checked ~ .price__wrapper {
-  transform: translate(-30%);
+  transform: translate(-42%);
 }
 .price__pagination-control-3:checked ~ .price__paginator-3 {
   background-color: #fff;
@@ -73,6 +75,11 @@
   transform: translate(-62%);
 }
 @media @tablet-widths {
+  .price__wrapper {
+  position: absolute;
+  left: 37%;
+
+}
   .price__wrapper {
     .container;
   }

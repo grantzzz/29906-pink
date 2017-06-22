@@ -1,8 +1,16 @@
 .map
 {
-    position: relative;
-
+    position: static;
+    z-index: -1;
     min-height: 220px;
 
     background: url('../img/bg-map-mobile@1x.png');
+
 }
+.map::before {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: url(../img/bg-triangle-white-footer.svg) center no-repeat;
+    z-index: 100;
+    }

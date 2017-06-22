@@ -2,10 +2,20 @@
 {
   border-collapse: collapse;
   border: 2px solid #e6e6e6;
-  background-color: #fff;
+  background-color: #f3f3f3;
   width: 100%;
+  svg {
+    float: right;
+    margin-right: 30px;
+  }
 
 
+}
+.price-table__no {
+  fill: #f35b21;
+}
+.price-table__yes {
+  fill: #3bc743;
 }
 .price-table__version {
     td {
@@ -49,13 +59,14 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
-
+    background-color: #fff;
     position: relative;
 
     vertical-align: middle;
     text-transform: uppercase;
 
     border: 2px solid #e5e5e5;
+
 }
 .price-table__smilies
 {
@@ -65,7 +76,7 @@
     line-height: 30px;
 
     position: relative;
-
+    background-color: #fff;
     vertical-align: middle;
     text-transform: uppercase;
 
@@ -79,7 +90,7 @@
     line-height: 30px;
 
     position: relative;
-
+    background-color: #fff;
     vertical-align: middle;
     text-transform: uppercase;
 
@@ -183,4 +194,46 @@
     padding-left: 25px;
 
     border: 2px solid #e5e5e5;
+}
+.price-table__blank {
+ visibility: hidden;
+}
+
+@media (max-width: 500px) {
+    .price-table {
+      svg {
+        margin-right: 10px;
+      }
+    }
+}
+@media @tablet-widths {
+  .price-table {
+    width: 100%;
+  }
+  .price-table__base-filter, .price-table__standard-filter, .price-table__unlim-filter, .price-table__base-smilies, .price-table__standard-smilies, .price-table__unlim-smilies, .price-table__base-comments, .price-table__standard-comments, .price-table__unlim-comments {
+    span {
+      display: none;
+    }
+  }
+
+  .price-table {
+  td {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  svg {
+
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin-right: 30px;
+    }
+
+
+  }
+  .price-table__left-column {
+    padding-left: 15px;
+    text-transform: none;
+  }
 }
