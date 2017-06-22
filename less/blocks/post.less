@@ -6,6 +6,7 @@
 .post__wrapper {
   width: 280px;
   margin: 0 auto;
+
 }
 .post__photo {
   margin: 0 auto;
@@ -15,6 +16,11 @@
     margin-top: -5px;
     padding: 20px  20px;
     background-color: #f3f3f3;
+    min-height: 165px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .post__author
 {
@@ -22,10 +28,8 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-
-    margin-right: 5px;
-
     color: #283645;
+
 }
 .post__time
 {
@@ -33,7 +37,6 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 24px;
-
     text-transform: uppercase;
 
     color: #283645;
@@ -80,35 +83,44 @@
 }
 .post__likes-counter
 {
+    display: flex;
+    justify-content: space-between;
+
     font-family: 'Open Sans';
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
 
     position: relative;
+    padding-right: 10px;
 
-    padding-left: 35px;
 
     text-transform: uppercase;
 
     color: #d22856;
-    &::before {
-    content: url("../img/icon-heart.svg");
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: 0;
-    top: -3px;
-    cursor: pointer;
+
+    svg {
+      cursor: pointer;
+      fill: #d32356;
+
+      &:hover {
+
+      }
     }
+
 }
 
 @media @tablet-widths {
-  .post__panorama-wrapper {
-
-}
+  .post__likes-counter {
+    flex-direction: row-reverse;
+  }
   .post__wrapper {
     width: 300px;
+  }
+  .post__panorama {
+    width: 1200px;
+    margin: 0 auto;
+
   }
 
 }
