@@ -18,7 +18,7 @@
   padding: 20px 0;
   cursor: pointer;
 }
-.page-header__logo-svg:hover {
+.page-header__logo-svg:hover, .page-header__logo-svg-tablet:hover, .page-header__logo-svg-desktop:hover {
   path {
   fill: #d22856;
   }
@@ -28,6 +28,9 @@
   path {
   fill: #fff;
   }
+}
+.page-header__logo-svg-tablet, .page-header__logo-svg-desktop {
+  display: none;
 }
 .page-header__toggler {
   position: absolute;
@@ -85,13 +88,20 @@
 @media @tablet-widths {
   .page-header__logo {
     width: 660px;
+
   }
+  .page-header__logo-svg, .page-header__logo-svg-desktop {
+  display: none;
+}
+.page-header__logo-svg-tablet {
+  display: block;
+}
   .page-header__toggler {
-    top: 40px;
+    top: 50px;
 
   }
   .page-header {
-    margin-bottom: -110px;
+    margin-bottom: -120px;
   }
   .page-header__inner {
     padding: 20px 0;
@@ -115,6 +125,14 @@
 }
  .page-header__logo {
   width: 320px;
+  position: relative;
+  top: -10px;
  }
+ .page-header__logo-svg, .page-header__logo-svg-tablet {
+  display: none;
+  }
+.page-header__logo-svg-desktop {
+  display: block;
+  }
 }
 

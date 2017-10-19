@@ -15,9 +15,15 @@
     margin-bottom: 40px;
 
     text-align: center;
-    &:hover {
+
+}
+.index-footer__logo-svg-desktop {
+  display: none;
+}
+.index-footer__logo-svg {
+  &:hover {
       cursor: pointer;
-      svg path {
+     path {
         fill: #d32356;
       }
     }
@@ -94,5 +100,21 @@
 @media @desktop-widths {
   a {
     font-size: 18px;
+  }
+  .index-footer__logo-svg {
+  display: none;
+  }
+  .index-footer__logo-svg-desktop {
+  display: block;
+  cursor: pointer;
+  &:hover {
+      cursor: pointer;
+     path {
+        fill: #d32356;
+      }
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

@@ -79,7 +79,7 @@
     align-self: center;
   }
   .features__wrapper {
-  background: url('../img/iphone-screen-mobile@1x.png') 0% 50% no-repeat;
+  background: url('../img/iphone-screen-3-tablet@1x.png') 0% 95% no-repeat;
   padding-bottom: 0;
   position: relative;
   display: flex;
@@ -90,15 +90,39 @@
   .features__inner {
     margin: 0;
     width: 295px;
+
   }
 
   .features__item-title, .features__item-descr {
     text-align: left;
   }
+  .features__effect-inner {
+    position: relative;
+    .clearfix;
+    background: url("../img/icon-timer.svg") no-repeat 0 10%;
+    padding: 20px 0;
+    &:before {
+      content: "24";
+      color: #d22856;
+      font-family: "Open Sans";
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 149px;
+      border: 15px #d22856 solid;
+      border-radius: 50%;
+      text-align: center;
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      top: 22.5%;
+      left: 3.5%;
+    }
+  }
   .features__effect {
     font-family: "Open Sans";
     display: block;
     width: 295px;
+    float: right;
     h2 {
       color: #000000;
       font-size: 30px;
@@ -107,7 +131,7 @@
     }
     p {
       color: #283645;
-      font-size: 14px;
+      font-size: 13.95px;
       font-weight: 400;
       line-height: 24px;
     }
@@ -126,6 +150,7 @@
   .features__wrapper {
   background-image: none;
   padding-bottom: 0;
+  padding-top: 0;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -137,12 +162,13 @@
     font-size: 50px;
   }
   .features__inner {
-    background: url('../img/iphone-screen-mobile@1x.png') 10% 10% no-repeat,
-                url('../img/iphone-screen-mobile@1x.png') 50% 10% no-repeat,
-                url('../img/iphone-screen-mobile@1x.png') 90% 10% no-repeat;
+    background: url('../img/iphone-screen-1-desktop@1x.png') 2% 10% no-repeat,
+                url('../img/iphone-screen-2-desktop@1x.png') 50% 10% no-repeat,
+                url('../img/iphone-screen-3-desktop@1x.png') 99% 10% no-repeat;
     width: 100%;
     display: flex;
     padding-top: 350px;
+
 
 
   }
@@ -166,10 +192,15 @@
     font-weight: 400;
     text-align: center;
   }
+  .features__effect-wrapper {
+    background-color: #f3f3f3;
+
+  }
   .features__effect {
     font-family: "Open Sans";
     width: 530px;
     margin-left: auto;
+    padding: 115px 0;
     h2 {
       color: #000000;
       font-size: 30px;
@@ -189,6 +220,16 @@
       line-height: 30px;
       text-decoration: underline;
     }
+  }
+  .features__effect-inner {
+      background-size: 298px 345px;
+      &:before  {
+        font-size: 120px;
+        width: 200px;
+        height: 200px;
+        border-width: 18px;
+        top: 19%;
+      }
   }
 }
 
